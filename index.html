@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axara | Online Fashion Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo-link" href="#" aria-label="Axara home">
+            <span class="logo-text">AXARA</span>
+        </a>
+
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Beauty</a>
+            <a href="#">Footwear</a>
+        </nav>
+
+        <form class="search-bar" role="search">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="search" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products">
+        </form>
+
+        <div class="action-bar" aria-label="Account actions">
+            <a class="action-container" href="#">
+                <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span class="action-name">Profile</span>
+            </a>
+            <a class="action-container" href="#">
+                <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="action-name">Wishlist</span>
+            </a>
+            <a class="action-container" href="#">
+                <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span class="action-name">Bag</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <img class="banner-image" src="Assets/banner.png" alt="Axara fashion sale — new season arrivals">
+
+        </section>
+
+        <section class="category-strip" aria-label="Shopping highlights">
+            <div class="strip-item">
+                <span>Free shipping</span>
+                <strong>On orders over ₹799</strong>
+            </div>
+            <div class="strip-item">
+                <span>Easy returns</span>
+                <strong>7-day pickup</strong>
+            </div>
+            <div class="strip-item">
+                <span>New arrivals</span>
+                <strong>Updated daily</strong>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="section-title">
+                <p class="eyebrow">Trending now</p>
+                <h2>Medal Worthy Brands<br><em>To Bag</em></h2>
+            </div>
+
+            <div class="product-container">
+
+                <article class="product-card">
+                    <span class="discount-badge">40% off</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/men/men-1.jpg" alt="Roadster men's casual shirt">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Roadster</h3>
+                        <p class="product-name">Men casual shirt</p>
+                        <p class="product-price">₹999 <span>₹1,699</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge deal">Deal</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/men/men-2.jpg" alt="Highlander men's regular fit shirt">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Highlander</h3>
+                        <p class="product-name">Regular fit shirt</p>
+                        <p class="product-price">₹899 <span>₹1,499</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge new">New</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/men/men-3.jpg" alt="H&M men's everyday outfit">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">H&amp;M</h3>
+                        <p class="product-name">Everyday outfit</p>
+                        <p class="product-price">₹1,299 <span>₹1,999</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge">35% off</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/men/men-4.jpg" alt="Levis men's denim style">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Levi's</h3>
+                        <p class="product-name">Denim street style</p>
+                        <p class="product-price">₹1,499 <span>₹2,299</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge hot">Hot</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/men/men-5.jpg" alt="Mast and Harbour men's weekend wear">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Mast &amp; Harbour</h3>
+                        <p class="product-name">Weekend wear</p>
+                        <p class="product-price">₹799 <span>₹1,299</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge">50% off</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/women/women-1.jpg" alt="DressBerry women's printed dress">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">DressBerry</h3>
+                        <p class="product-name">Printed summer dress</p>
+                        <p class="product-price">₹1,199 <span>₹2,399</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge deal">Deal</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/women/women-2.jpg" alt="Tokyo Talkies women's party look">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Tokyo Talkies</h3>
+                        <p class="product-name">Party ready look</p>
+                        <p class="product-price">₹999 <span>₹1,899</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge new">New</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/women/women-3.jpg" alt="Sassafras women's co-ord set">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Sassafras</h3>
+                        <p class="product-name">Modern co-ord set</p>
+                        <p class="product-price">₹1,399 <span>₹2,099</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge">45% off</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/women/women-4.jpg" alt="Biba women's ethnic kurta">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Biba</h3>
+                        <p class="product-name">Ethnic kurta</p>
+                        <p class="product-price">₹1,099 <span>₹1,999</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge new">Fresh</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/women/women-5.jpg" alt="Anouk women's festive outfit">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Anouk</h3>
+                        <p class="product-name">Festive outfit</p>
+                        <p class="product-price">₹1,599 <span>₹2,599</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge">30% off</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/women/women-6.jpg" alt="Only women's casual top">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Only</h3>
+                        <p class="product-name">Casual top</p>
+                        <p class="product-price">₹749 <span>₹1,099</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <span class="discount-badge hot">Best</span>
+                    <div class="card-image-wrap">
+                        <img src="Assets/women/women-7.jpg" alt="Forever 21 women's streetwear">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-brand">Forever 21</h3>
+                        <p class="product-name">Streetwear edit</p>
+                        <p class="product-price">₹1,249 <span>₹1,799</span></p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <span class="footer-brand">AXARA</span>
+            <p>Curated fashion. Delivered.</p>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <a href="#">About us</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact us</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Accessories</a>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <p>akshaybankar1807@gmail.com</p>
+                <p>+91 8552919882</p>
+                <p>Mon–Sat, 10 AM – 7 PM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Axara. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
