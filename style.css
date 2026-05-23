@@ -758,3 +758,33 @@ footer {
     font-weight: 600;
     cursor: pointer;
 }
+
+.wishlist-icon{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+
+    border-radius: 50%;
+
+    color: white;
+    font-size: 18px;
+
+    z-index: 3;
+
+    transition: 0.3s ease;
+}
+
+.wishlist-icon:hover{
+    background: var(--gold);
+    color: black;
+}
