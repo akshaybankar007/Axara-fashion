@@ -5,14 +5,14 @@ const products = [
     {
         brand: "Roadster",
         name: "Men Casual Shirt",
-        price: 999,
+        price: 1299,
         oldPrice: 1999,
         image: "Assets/men/men-1.jpg"
     },
     {
         brand: "HRX",
         name: "Everyday Outfit",
-        price: 1499,
+        price: 1829,
         oldPrice: 2999,
         image: "Assets/men/men-2.jpg"
     },
@@ -42,6 +42,11 @@ products.forEach((product) => {
         <p class="product-price">
         ₹${product.price}
         <span>₹${product.oldPrice}</span>
+        </p>
+        <p class="product-discount">
+        ${Math.round(
+            ((product.oldPrice - product.price) / product.oldPrice) * 100 
+        )}% off
         </p>
         </div>
     </article>
