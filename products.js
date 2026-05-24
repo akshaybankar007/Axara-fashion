@@ -8,7 +8,7 @@ const products = [
         price: 1299,
         oldPrice: 1999,
         rating: 4.3,
-        image: "Assets/men/men-1.jpg"
+        image: "Assets/men/men-1.jpg",
         category: "Men",
         delivery: "Free Delivery",
         stock: true,
@@ -39,38 +39,85 @@ const products = [
         badge: "Best Seller"
     }
 ];
-
-products.forEach((product) => {
-    console.log(product)
-});
-
-products.forEach((product) => {
-    productContainer.innerHTML += `
-    <article class="product-card">
-     <div class="card-image-wrap">
-        <img src="${product.image}">
-        </div>
-
-        <div class=product-details>
-        <h3 class="product-brand">${product.brand}</h3>
-        <p class="product-name">${product.name}</p>
-        <p class="product-price">
-        ₹${product.price}
-        <span>₹${product.oldPrice}</span>
-        </p>
-        <p class="product-discount">
-        ${Math.round(
-            ((product.oldPrice - product.price) / product.oldPrice) * 100 
-        )}% off
-        </p>
-        <p class="product-rating">Rating: ${product.rating} ⭐</p>
-        <p class="product-category">${product.category}</p>
-        <p class="delivery-text">${product.delivery}</p>
-        <p class="stock-status">${product.stock ? "In Stock" : "Out of Stock"}</p>
-
-        <div class="product-badge">${product.badge}</div>
-        </div>
-    </article>
-    `;   
-     });
      
+     // Search functionality
+
+     const searchInput = document.getElementById('searchInput');
+
+     function displayProducts(productsArray){
+
+    productContainer.innerHTML = "";
+
+    productsArray.forEach((product) => {
+
+        productContainer.innerHTML += `
+        
+        <article class="product-card">
+
+            <div class="card-image-wrap">
+                <img src="${product.image}">
+            </div>
+
+            <div class="product-details">
+
+                <h3 class="product-brand">
+                    ${product.brand}
+                </h3>
+
+                <p class="product-name">
+                    ${product.name}
+                </p>
+
+                <p class="product-price">
+                    ₹${product.price}
+                    <span>
+                        ₹${product.oldPrice}
+                    </span>
+                </p>
+
+                <p class="product-discount">
+                    ${Math.round(
+                        ((product.oldPrice - product.price)
+                        / product.oldPrice) * 100
+                    )}% OFF
+                </p>
+
+                <p class="product-rating">
+                    ⭐ ${product.rating}
+                </p>
+
+                <p class="delivery-text">
+                    ${product.delivery}
+                </p>
+
+            </div>
+
+        </article>
+        `;
+    });
+}
+
+displayProducts(products);
+
+searchInput.addEventListener("input", () => {
+
+    const searchText =
+    searchInput.value.toLowerCase();
+
+    const filteredProducts =
+    products.filter((product) => {
+
+        return (
+            product.brand.toLowerCase()
+            .includes(searchText)
+
+            ||
+
+            product.name.toLowerCase()
+            .includes(searchText)
+        );
+    });
+
+    displayProducts(filteredProducts);
+
+});
