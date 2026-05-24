@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axara | Kids' Collection</title>
+    <title>Axara | Kid's Collection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,6 @@
         <a class="logo-link" href="index.html" aria-label="Axara home">
             <span class="logo-text">AXARA</span>
         </a>
-
         <nav class="nav-bar" aria-label="Main navigation">
             <a href="men.html">Men</a>
             <a href="women.html">Women</a>
@@ -23,12 +22,11 @@
             <a href="beauty.html">Beauty</a>
             <a href="footwear.html">Footwear</a>
         </nav>
-
-        <form class="search-bar" role="search">
+        <form class="search-bar" role="search" onsubmit="event.preventDefault();">
+            <label for="searchInput" class="sr-only">Search products</label>
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            <input type="search" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products">
+            <input type="search" id="searchInput" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products">
         </form>
-
         <div class="action-bar" aria-label="Account actions">
             <a class="action-container" href="#">
                 <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -49,288 +47,25 @@
         <section class="products-section" id="products">
             <div class="section-title">
                 <p class="eyebrow">Discover</p>
-                <h2>Kids' <br><em>Collection</em></h2>
+                <h2>Men's <br><em>Collection</em></h2>
             </div>
-
-            <div class="product-container">
-                <article class="product-card">
-                    <span class="discount-badge">30% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (1).jpg" alt="Gini & Jony Boys Printed T-shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Gini & Jony</h3>
-                        <p class="product-name">Boys Printed T-shirt</p>
-                        <p class="product-price">₹499 <span>₹799</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">New</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (2).jpg" alt="Allen Solly Junior Girls Casual Dress">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Allen Solly Junior</h3>
-                        <p class="product-name">Girls Casual Dress</p>
-                        <p class="product-price">₹899 <span>₹1,299</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Best</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (3).jpg" alt="Mothercare Infant Romper Set">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Mothercare</h3>
-                        <p class="product-name">Infant Romper Set</p>
-                        <p class="product-price">₹1,199 <span>₹1,599</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (4).jpg" alt="U.S. Polo Assn. Kids Boys Polo Shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">U.S. Polo Assn. Kids</h3>
-                        <p class="product-name">Boys Polo Shirt</p>
-                        <p class="product-price">₹799 <span>₹1,199</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">20% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (5).jpg" alt="H&M Girls Denim Jacket">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">H&M</h3>
-                        <p class="product-name">Girls Denim Jacket</p>
-                        <p class="product-price">₹1,499 <span>₹1,899</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">Fresh</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (6).jpg" alt="Max Boys Chino Shorts">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Max</h3>
-                        <p class="product-name">Boys Chino Shorts</p>
-                        <p class="product-price">₹599 <span>₹899</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">50% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (7).jpg" alt="Lilliput Girls Party Frock">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Lilliput</h3>
-                        <p class="product-name">Girls Party Frock</p>
-                        <p class="product-price">₹999 <span>₹1,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Hot</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (8).jpg" alt="Pepe Jeans Boys Slim Fit Jeans">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Pepe Jeans</h3>
-                        <p class="product-name">Boys Slim Fit Jeans</p>
-                        <p class="product-price">₹1,299 <span>₹1,799</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (9).jpg" alt="GAP Kids Logo Pullover Hoodie">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">GAP Kids</h3>
-                        <p class="product-name">Logo Pullover Hoodie</p>
-                        <p class="product-price">₹1,099 <span>₹1,699</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">15% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (10).jpg" alt="Tommy Hilfiger Girls Striped Top">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Tommy Hilfiger</h3>
-                        <p class="product-name">Girls Striped Top</p>
-                        <p class="product-price">₹899 <span>₹1,099</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">New</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (11).jpg" alt="United Colors of Benetton Boys Track Pants">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">United Colors of Benetton</h3>
-                        <p class="product-name">Boys Track Pants</p>
-                        <p class="product-price">₹749 <span>₹1,099</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Best</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (12).jpg" alt="Zara Kids Girls Floral Skirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Zara Kids</h3>
-                        <p class="product-name">Girls Floral Skirt</p>
-                        <p class="product-price">₹999 <span>₹1,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (13).jpg" alt="Puma Kids Tracksuit">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Puma</h3>
-                        <p class="product-name">Kids Tracksuit Set</p>
-                        <p class="product-price">₹1,599 <span>₹2,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">25% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (14).jpg" alt="Marks & Spencer Boys Cotton Shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Marks & Spencer</h3>
-                        <p class="product-name">Boys Cotton Shirt</p>
-                        <p class="product-price">₹899 <span>₹1,199</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">New</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (15).jpg" alt="Biba Girls Ethnic Kurta Set">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Biba Girls</h3>
-                        <p class="product-name">Ethnic Kurta Set</p>
-                        <p class="product-price">₹1,299 <span>₹1,899</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Hot</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (16).jpg" alt="Levi's Boys Denim Shorts">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Levi's</h3>
-                        <p class="product-name">Boys Denim Shorts</p>
-                        <p class="product-price">₹999 <span>₹1,399</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/kids/kid- (17).jpg" alt="FabIndia Kids Cotton Kurta">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">FabIndia</h3>
-                        <p class="product-name">Kids Cotton Kurta</p>
-                        <p class="product-price">₹799 <span>₹1,099</span></p>
-                    </div>
-                </article>
-            </div>
+            
+            <div class="product-container" id="productContainer" data-category="Men"></div>
+            
         </section>
     </main>
 
     <footer>
-        <div class="footer-top">
-            <span class="footer-brand">AXARA</span>
-            <p>Curated fashion. Delivered.</p>
-        </div>
+        <div class="footer-top"><span class="footer-brand">AXARA</span><p>Curated fashion. Delivered.</p></div>
         <div class="footer-container">
-            <div class="footer-column">
-                <h3>Company</h3>
-                <a href="#">About us</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact us</a>
-                <a href="#">FAQs</a>
-            </div>
-            <div class="footer-column">
-                <h3>Shop</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Accessories</a>
-            </div>
-            <div class="footer-column">
-                <h3>Support</h3>
-                <p>akshaybankar1807@gmail.com</p>
-                <p>+91 8552919882</p>
-                <p>Mon–Sat, 10 AM – 7 PM</p>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
+            <div class="footer-column"><h3>Company</h3><a href="#">About us</a><a href="#">Careers</a><a href="#">Contact us</a><a href="#">FAQs</a></div>
+            <div class="footer-column"><h3>Shop</h3><a href="men.html">Men</a><a href="women.html">Women</a><a href="kids.html">Kids</a><a href="beauty.html">Beauty</a></div>
+            <div class="footer-column"><h3>Support</h3><p>akshaybankar1807@gmail.com</p><p>+91 8552919882</p><p>Mon–Sat, 10 AM – 7 PM</p></div>
+            <div class="footer-column"><h3>Follow Us</h3><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a></div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Axara. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>© 2026 Axara. All rights reserved.</p></div>
     </footer>
-
+    
+    <script src="products.js"></script>
 </body>
 </html>

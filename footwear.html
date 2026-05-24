@@ -15,7 +15,6 @@
         <a class="logo-link" href="index.html" aria-label="Axara home">
             <span class="logo-text">AXARA</span>
         </a>
-
         <nav class="nav-bar" aria-label="Main navigation">
             <a href="men.html">Men</a>
             <a href="women.html">Women</a>
@@ -23,12 +22,11 @@
             <a href="beauty.html">Beauty</a>
             <a href="footwear.html">Footwear</a>
         </nav>
-
-        <form class="search-bar" role="search">
+        <form class="search-bar" role="search" onsubmit="event.preventDefault();">
+            <label for="searchInput" class="sr-only">Search products</label>
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            <input type="search" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products">
+            <input type="search" id="searchInput" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products">
         </form>
-
         <div class="action-bar" aria-label="Account actions">
             <a class="action-container" href="#">
                 <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -49,261 +47,25 @@
         <section class="products-section" id="products">
             <div class="section-title">
                 <p class="eyebrow">Discover</p>
-                <h2>Footwear <br><em>Collection</em></h2>
+                <h2>Men's <br><em>Collection</em></h2>
             </div>
-
-            <div class="product-container">
-                <article class="product-card">
-                    <span class="discount-badge hot">Hot</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (1).jpg" alt="Nike Air Max Sneakers">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Nike</h3>
-                        <p class="product-name">Air Max Daily Sneakers</p>
-                        <p class="product-price">₹8,499 <span>₹10,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">New</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (2).jpg" alt="Adidas Ultraboost Running Shoes">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Adidas</h3>
-                        <p class="product-name">Ultraboost Running Shoes</p>
-                        <p class="product-price">₹12,999 <span>₹16,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (3).jpg" alt="Puma Suede Classic">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Puma</h3>
-                        <p class="product-name">Suede Classic Casuals</p>
-                        <p class="product-price">₹3,999 <span>₹5,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">30% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (4).jpg" alt="Reebok Classic Leather">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Reebok</h3>
-                        <p class="product-name">Classic Leather Sneakers</p>
-                        <p class="product-price">₹4,199 <span>₹5,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">20% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (5).jpg" alt="Vans Old Skool Skate Shoes">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Vans</h3>
-                        <p class="product-name">Old Skool Canvas Shoes</p>
-                        <p class="product-price">₹3,599 <span>₹4,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Best</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (6).jpg" alt="Converse Chuck Taylor">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Converse</h3>
-                        <p class="product-name">Chuck Taylor High Tops</p>
-                        <p class="product-price">₹2,999 <span>₹3,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">Fresh</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (7).jpg" alt="New Balance 574">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">New Balance</h3>
-                        <p class="product-name">574 Core Sneakers</p>
-                        <p class="product-price">₹7,499 <span>₹8,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (8).jpg" alt="ASICS Gel-Kayano">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">ASICS</h3>
-                        <p class="product-name">Gel-Kayano Running Shoes</p>
-                        <p class="product-price">₹9,999 <span>₹14,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">15% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (9).jpg" alt="Woodland Leather Boots">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Woodland</h3>
-                        <p class="product-name">Genuine Leather Boots</p>
-                        <p class="product-price">₹4,249 <span>₹4,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Hot</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (10).jpg" alt="Red Tape Formal Oxfords">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Red Tape</h3>
-                        <p class="product-name">Classic Formal Oxfords</p>
-                        <p class="product-price">₹1,899 <span>₹4,599</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (11).jpg" alt="Bata Comfit Sandals">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Bata</h3>
-                        <p class="product-name">Comfit Leather Sandals</p>
-                        <p class="product-price">₹999 <span>₹1,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">50% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (12).jpg" alt="Hush Puppies Loafers">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Hush Puppies</h3>
-                        <p class="product-name">Suede Slip-On Loafers</p>
-                        <p class="product-price">₹2,499 <span>₹4,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">New</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (13).jpg" alt="Crocs Classic Clogs">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Crocs</h3>
-                        <p class="product-name">Classic Everyday Clogs</p>
-                        <p class="product-price">₹2,299 <span>₹2,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Best</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (14).jpg" alt="Skechers Go Walk">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Skechers</h3>
-                        <p class="product-name">Go Walk Slip-Ons</p>
-                        <p class="product-price">₹3,499 <span>₹4,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/footwear/footwear- (15).jpg" alt="Metro Embellished Heels">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Metro</h3>
-                        <p class="product-name">Embellished Party Heels</p>
-                        <p class="product-price">₹1,699 <span>₹2,499</span></p>
-                    </div>
-                </article>
-
-            </div>
+            
+            <div class="product-container" id="productContainer" data-category="Men"></div>
+            
         </section>
     </main>
 
     <footer>
-        <div class="footer-top">
-            <span class="footer-brand">AXARA</span>
-            <p>Curated fashion. Delivered.</p>
-        </div>
+        <div class="footer-top"><span class="footer-brand">AXARA</span><p>Curated fashion. Delivered.</p></div>
         <div class="footer-container">
-            <div class="footer-column">
-                <h3>Company</h3>
-                <a href="#">About us</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact us</a>
-                <a href="#">FAQs</a>
-            </div>
-            <div class="footer-column">
-                <h3>Shop</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Accessories</a>
-            </div>
-            <div class="footer-column">
-                <h3>Support</h3>
-                <p>akshaybankar1807@gmail.com</p>
-                <p>+91 8552919882</p>
-                <p>Mon–Sat, 10 AM – 7 PM</p>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
+            <div class="footer-column"><h3>Company</h3><a href="#">About us</a><a href="#">Careers</a><a href="#">Contact us</a><a href="#">FAQs</a></div>
+            <div class="footer-column"><h3>Shop</h3><a href="men.html">Men</a><a href="women.html">Women</a><a href="kids.html">Kids</a><a href="beauty.html">Beauty</a></div>
+            <div class="footer-column"><h3>Support</h3><p>akshaybankar1807@gmail.com</p><p>+91 8552919882</p><p>Mon–Sat, 10 AM – 7 PM</p></div>
+            <div class="footer-column"><h3>Follow Us</h3><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a></div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Axara. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>© 2026 Axara. All rights reserved.</p></div>
     </footer>
-
+    
+    <script src="products.js"></script>
 </body>
 </html>

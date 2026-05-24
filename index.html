@@ -12,10 +12,9 @@
 <body>
 
     <header class="site-header">
-        <a class="logo-link" href="#" aria-label="Axara home">
+        <a class="logo-link" href="index.html" aria-label="Axara home">
             <span class="logo-text">AXARA</span>
         </a>
-
         <nav class="nav-bar" aria-label="Main navigation">
             <a href="men.html">Men</a>
             <a href="women.html">Women</a>
@@ -23,13 +22,11 @@
             <a href="beauty.html">Beauty</a>
             <a href="footwear.html">Footwear</a>
         </nav>
-
-        <form class="search-bar" role="search">
+        <form class="search-bar" role="search" onsubmit="event.preventDefault();">
+            <label for="searchInput" class="sr-only">Search products</label>
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            
-            <input type="search" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products" id="searchInput">
+            <input type="search" id="searchInput" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products">
         </form>
-
         <div class="action-bar" aria-label="Account actions">
             <a class="action-container" href="#">
                 <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -47,98 +44,46 @@
     </header>
 
     <main>
-
         <section class="hero">
             <img class="banner-image" src="Assets/banner.png" alt="Axara fashion sale — new season arrivals">
-
         </section>
 
         <section class="category-strip" aria-label="Shopping highlights">
-            <div class="strip-item">
-                <span>Free shipping</span>
-                <strong>On orders over ₹799</strong>
-            </div>
-            <div class="strip-item">
-                <span>Easy returns</span>
-                <strong>7-day pickup</strong>
-            </div>
-            <div class="strip-item">
-                <span>New arrivals</span>
-                <strong>Updated daily</strong>
-            </div>
+            <div class="strip-item"><span>Free shipping</span><strong>On orders over ₹799</strong></div>
+            <div class="strip-item"><span>Easy returns</span><strong>7-day pickup</strong></div>
+            <div class="strip-item"><span>New arrivals</span><strong>Updated daily</strong></div>
         </section>
 
         <section class="featured-categories">
-
             <div class="category-card">
                 <img src="Assets/men/men-1.jpg" alt="Men Collection">
-
-                <div class="category-content">
-                    <p>Modern Essentials</p>
-                    <h3>Men Collection</h3>
-                </div>
+                <div class="category-content"><p>Modern Essentials</p><h3>Men Collection</h3></div>
             </div>
-
             <div class="category-card">
                 <img src="Assets/women/women-10.jpg" alt="Women Collection">
-
-                <div class="category-content">
-                    <p>Curated Elegance</p>
-                    <h3>Women Collection</h3>
-                </div>
+                <div class="category-content"><p>Curated Elegance</p><h3>Women Collection</h3></div>
             </div>
-
         </section>
+
         <section class="products-section" id="products">
             <div class="section-title">
                 <p class="eyebrow">Trending now</p>
                 <h2>Medal Worthy Brands<br><em>To Bag</em></h2>
             </div>
-
-            <div class="product-container" id="productContainer">
-
-            </div>
+            <div class="product-container" id="productContainer" data-category="Featured"></div>
         </section>
-
     </main>
 
     <footer>
-        <div class="footer-top">
-            <span class="footer-brand">AXARA</span>
-            <p>Curated fashion. Delivered.</p>
-        </div>
+        <div class="footer-top"><span class="footer-brand">AXARA</span><p>Curated fashion. Delivered.</p></div>
         <div class="footer-container">
-            <div class="footer-column">
-                <h3>Company</h3>
-                <a href="#">About us</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact us</a>
-                <a href="#">FAQs</a>
-            </div>
-            <div class="footer-column">
-                <h3>Shop</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Accessories</a>
-            </div>
-            <div class="footer-column">
-                <h3>Support</h3>
-                <p>akshaybankar1807@gmail.com</p>
-                <p>+91 8552919882</p>
-                <p>Mon–Sat, 10 AM – 7 PM</p>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
+            <div class="footer-column"><h3>Company</h3><a href="#">About us</a><a href="#">Careers</a><a href="#">Contact us</a><a href="#">FAQs</a></div>
+            <div class="footer-column"><h3>Shop</h3><a href="men.html">Men</a><a href="women.html">Women</a><a href="kids.html">Kids</a><a href="beauty.html">Beauty</a></div>
+            <div class="footer-column"><h3>Support</h3><p>akshaybankar1807@gmail.com</p><p>+91 8552919882</p><p>Mon–Sat, 10 AM – 7 PM</p></div>
+            <div class="footer-column"><h3>Follow Us</h3><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a></div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2025 Axara. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>© 2026 Axara. All rights reserved.</p></div>
     </footer>
-<script src="products.js"></script>
+    <script src="products.js"></script>
 </body>
 </html>

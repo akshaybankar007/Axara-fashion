@@ -15,7 +15,6 @@
         <a class="logo-link" href="index.html" aria-label="Axara home">
             <span class="logo-text">AXARA</span>
         </a>
-
         <nav class="nav-bar" aria-label="Main navigation">
             <a href="men.html">Men</a>
             <a href="women.html">Women</a>
@@ -23,12 +22,11 @@
             <a href="beauty.html">Beauty</a>
             <a href="footwear.html">Footwear</a>
         </nav>
-
-        <form class="search-bar" role="search">
+        <form class="search-bar" role="search" onsubmit="event.preventDefault();">
+            <label for="searchInput" class="sr-only">Search products</label>
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            <input type="search" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products">
+            <input type="search" id="searchInput" placeholder="Search brands, styles and more…" class="search-input" aria-label="Search products">
         </form>
-
         <div class="action-bar" aria-label="Account actions">
             <a class="action-container" href="#">
                 <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -51,272 +49,23 @@
                 <p class="eyebrow">Discover</p>
                 <h2>Men's <br><em>Collection</em></h2>
             </div>
-
-            <div class="product-container">
-                <article class="product-card">
-                    <span class="discount-badge">40% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-1.jpg" alt="Roadster men's casual shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Roadster</h3>
-                        <p class="product-name">Men casual shirt</p>
-                        <p class="product-price">₹999 <span>₹1,699</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-2.jpg" alt="Highlander men's regular fit shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Highlander</h3>
-                        <p class="product-name">Regular fit shirt</p>
-                        <p class="product-price">₹899 <span>₹1,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">New</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-3.jpg" alt="Levi's denim jacket">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Levi's</h3>
-                        <p class="product-name">Classic Denim Jacket</p>
-                        <p class="product-price">₹2,499 <span>₹3,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">35% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-4.jpg" alt="Mast and Harbour chinos">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Mast & Harbour</h3>
-                        <p class="product-name">Slim Fit Chinos</p>
-                        <p class="product-price">₹1,299 <span>₹1,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Hot</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-5.jpg" alt="WROGN graphic tee">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">WROGN</h3>
-                        <p class="product-name">Graphic T-Shirt</p>
-                        <p class="product-price">₹699 <span>₹1,199</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">20% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-6.jpg" alt="U.S. Polo Assn t-shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">U.S. Polo Assn.</h3>
-                        <p class="product-name">Polo T-Shirt</p>
-                        <p class="product-price">₹1,199 <span>₹1,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-7.jpg" alt="Tommy Hilfiger striped shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Tommy Hilfiger</h3>
-                        <p class="product-name">Striped Casual Shirt</p>
-                        <p class="product-price">₹2,999 <span>₹4,599</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">New</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-8.jpg" alt="HRX activewear joggers">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">HRX</h3>
-                        <p class="product-name">Activewear Joggers</p>
-                        <p class="product-price">₹899 <span>₹1,599</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">15% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-9.jpg" alt="Jack & Jones jeans">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Jack & Jones</h3>
-                        <p class="product-name">Slim Fit Jeans</p>
-                        <p class="product-price">₹1,899 <span>₹2,299</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Best</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-10.jpg" alt="Allen Solly formal shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Allen Solly</h3>
-                        <p class="product-name">Formal Solid Shirt</p>
-                        <p class="product-price">₹1,499 <span>₹2,099</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-11.jpg" alt="Puma sports shorts">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Puma</h3>
-                        <p class="product-name">Sports Shorts</p>
-                        <p class="product-price">₹799 <span>₹1,299</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">50% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-12.jpg" alt="Flying Machine denim shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Flying Machine</h3>
-                        <p class="product-name">Denim Shirt</p>
-                        <p class="product-price">₹1,399 <span>₹2,799</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge new">New</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-13.jpg" alt="Peter England trousers">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Peter England</h3>
-                        <p class="product-name">Formal Trousers</p>
-                        <p class="product-price">₹1,299 <span>₹1,899</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge hot">Hot</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-14.jpg" alt="Calvin Klein essential tee">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Calvin Klein</h3>
-                        <p class="product-name">Essential Crew Tee</p>
-                        <p class="product-price">₹2,199 <span>₹3,499</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge">25% off</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-15.jpg" alt="Arrow tailored suit">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Arrow</h3>
-                        <p class="product-name">Tailored Two-Piece Suit</p>
-                        <p class="product-price">₹5,999 <span>₹7,999</span></p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <span class="discount-badge deal">Deal</span>
-                    <div class="card-image-wrap">
-                        <div class="wishlist-icon">♡</div>
-                        <img src="Assets/men/men-16.jpg" alt="Rare Rabbit linen shirt">
-                    </div>
-                    <div class="card-overlay"><button>Add to Bag</button></div>
-                    <div class="product-details">
-                        <h3 class="product-brand">Rare Rabbit</h3>
-                        <p class="product-name">Premium Linen Shirt</p>
-                        <p class="product-price">₹2,499 <span>₹3,299</span></p>
-                    </div>
-                </article>
-            </div>
+            
+            <div class="product-container" id="productContainer" data-category="Men"></div>
+            
         </section>
     </main>
 
     <footer>
-        <div class="footer-top">
-            <span class="footer-brand">AXARA</span>
-            <p>Curated fashion. Delivered.</p>
-        </div>
+        <div class="footer-top"><span class="footer-brand">AXARA</span><p>Curated fashion. Delivered.</p></div>
         <div class="footer-container">
-            <div class="footer-column">
-                <h3>Company</h3>
-                <a href="#">About us</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact us</a>
-                <a href="#">FAQs</a>
-            </div>
-            <div class="footer-column">
-                <h3>Shop</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Accessories</a>
-            </div>
-            <div class="footer-column">
-                <h3>Support</h3>
-                <p>akshaybankar1807@gmail.com</p>
-                <p>+91 8552919882</p>
-                <p>Mon–Sat, 10 AM – 7 PM</p>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
+            <div class="footer-column"><h3>Company</h3><a href="#">About us</a><a href="#">Careers</a><a href="#">Contact us</a><a href="#">FAQs</a></div>
+            <div class="footer-column"><h3>Shop</h3><a href="men.html">Men</a><a href="women.html">Women</a><a href="kids.html">Kids</a><a href="beauty.html">Beauty</a></div>
+            <div class="footer-column"><h3>Support</h3><p>akshaybankar1807@gmail.com</p><p>+91 8552919882</p><p>Mon–Sat, 10 AM – 7 PM</p></div>
+            <div class="footer-column"><h3>Follow Us</h3><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a></div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Axara. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>© 2026 Axara. All rights reserved.</p></div>
     </footer>
-
+    
+    <script src="products.js"></script>
 </body>
 </html>
