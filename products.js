@@ -121,3 +121,10 @@ searchInput.addEventListener("input", () => {
     displayProducts(filteredProducts);
 
 });
+
+//add to bag functionality
+let cartCount = 0;
+<div class="card-overlay">
+    <button onclick="cartCount++;
+    console.log('Cart Items:', cartCount);">Add to Bag</button>
+    </div>
