@@ -7,21 +7,36 @@ const products = [
         name: "Men Casual Shirt",
         price: 1299,
         oldPrice: 1999,
+        rating: 4.3,
         image: "Assets/men/men-1.jpg"
+        category: "Men",
+        delivery: "Free Delivery",
+        stock: true,
+        badge: "Best Seller"
     },
     {
         brand: "HRX",
         name: "Everyday Outfit",
         price: 1829,
         oldPrice: 2999,
-        image: "Assets/men/men-2.jpg"
+        rating: 4.8,
+        image: "Assets/men/men-2.jpg",
+        category: "Men",
+        delivery: "Free Delivery",
+        stock: true,
+        badge: "New Arrival"
     },
     {
         brand: "Levi's",
         name: "Denim Street Style",
         price: 1399,
         oldPrice: 2799,
-        image: "Assets/men/men-3.jpg"
+        rating: 4.7,
+        image: "Assets/men/men-3.jpg",
+        category: "Men",
+        delivery: "Free Delivery",
+        stock: true,
+        badge: "Best Seller"
     }
 ];
 
@@ -48,6 +63,12 @@ products.forEach((product) => {
             ((product.oldPrice - product.price) / product.oldPrice) * 100 
         )}% off
         </p>
+        <p class="product-rating">Rating: ${product.rating} ⭐</p>
+        <p class="product-category">${product.category}</p>
+        <p class="delivery-text">${product.delivery}</p>
+        <p class="stock-status">${product.stock ? "In Stock" : "Out of Stock"}</p>
+
+        <div class="product-badge">${product.badge}</div>
         </div>
     </article>
     `;   
