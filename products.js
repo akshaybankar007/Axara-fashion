@@ -6,18 +6,21 @@ const products = [
         brand: "Roadster",
         name: "Men Casual Shirt",
         price: 999,
+        oldPrice: 1999,
         image: "Assets/men/men-1.jpg"
     },
     {
         brand: "HRX",
         name: "Everyday Outfit",
         price: 1499,
+        oldPrice: 2999,
         image: "Assets/men/men-2.jpg"
     },
     {
         brand: "Levi's",
         name: "Denim Street Style",
         price: 1399,
+        oldPrice: 2799,
         image: "Assets/men/men-3.jpg"
     }
 ];
@@ -36,7 +39,10 @@ products.forEach((product) => {
         <div class=product-details>
         <h3 class="product-brand">${product.brand}</h3>
         <p class="product-name">${product.name}</p>
-        <p class="product-price">₹${product.price}</p>
+        <p class="product-price">
+        ₹${product.price}
+        <span>₹${product.oldPrice}</span>
+        </p>
         </div>
     </article>
     `;   
