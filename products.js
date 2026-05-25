@@ -25,6 +25,13 @@ window.addToCart = function() {
     console.log('Cart Items:', cartCount);
 };
 
+window.openProduct = function(index){
+    localStorage.setItem("selectedProduct", 
+        JSON.stringify(products[index])
+    );
+    window.location.href = "product.html";
+};
+
 function displayProducts(productsArray) {
     if (!productContainer) return; // Prevent fatal TypeError if element is missing
 
@@ -37,7 +44,7 @@ function displayProducts(productsArray) {
 
         // Template literals used
         const html = `
-        <article class="product-card" style="animation-delay: ${index * 0.05}s">
+        <article class="product-card" onclick="openProduct(${index})" style="animation-delay: ${index * 0.05}s">
             <span class="discount-badge ${badgeClass}">${displayBadge}</span>
             <div class="card-image-wrap">
                 <div class="wishlist-icon">♡</div>
